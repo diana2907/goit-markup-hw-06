@@ -82,7 +82,7 @@
       >
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="hero-btn" type="button" data-modal-open>
+          <button class="hero-btn btn" type="button" data-modal-open>
             Заказать услугу
           </button>
         </div>
@@ -551,8 +551,27 @@
             </li>
           </ul>
         </div>
+        <form class="footer-form">
+          <p class="form-text">Подпишитесь на рассылку</p>
+          <div class="footer-input-wrap">
+            <input
+              class="footer-input"
+              name="email"
+              type="email"
+              placeholder="E-mail"
+            />
+
+            <button class="btn-footer btn" type="submit">
+              Подписаться
+              <svg class="button-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close-btn" type="button" data-modal-close>
@@ -560,6 +579,88 @@
             <use href="./images/icons.svg#icon-button-close"></use>
           </svg>
         </button>
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <form class="modal-form">
+          <div class="modal-field">
+            <label class="label-modal" for="full-name">Имя</label>
+            <div class="modal-wrap">
+              <input
+                class="input-modal"
+                id="full-name"
+                name="full-name"
+                type="text"
+                required
+              />
+              <svg class="input-icon" width="12" height="12">
+                <use href="./images/icons.svg#icon-person-2"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-field">
+            <label class="label-modal" for="tel">Телефон</label>
+            <div class="modal-wrap">
+              <input
+                class="input-modal"
+                id="tel"
+                name="tel"
+                type="tel"
+                required
+              />
+              <svg class="input-icon" width="13" height="13">
+                <use href="./images/icons.svg#icon-phone-1"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-field">
+            <label class="label-modal" for="email">Почта</label>
+            <div class="modal-wrap">
+              <input
+                class="input-modal"
+                id="email"
+                name="mail"
+                type="email"
+                required
+              />
+              <svg class="input-icon" width="15" height="12">
+                <use href="./images/icons.svg#icon-mail-2"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-field-comment">
+            <label class="label-modal" for="comment">Комментарий</label>
+            <div class="modal-wrap-comment">
+              <textarea
+                class="textarea-comment"
+                name="comment"
+                id="comment"
+                placeholder="Введите текст"
+              ></textarea>
+            </div>
+          </div>
+          <div class="modal-field-check">
+            <input
+              class="input-check visually-hidden"
+              type="checkbox"
+              name="privacy"
+              id="privacy"
+              required
+            />
+            <label class="check-label" for="privacy">
+              <span>
+                <svg class="check-icon" width="11" height="8">
+                  <use href="./images/icons.svg#icon-checkbox1"></use>
+                </svg>
+              </span>
+              Соглашаюсь с рассылкой и принимаю&nbsp;
+              <a href="">Условия договора</a>
+            </label>
+          </div>
+
+          <button class="btn-modal btn" type="submit">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
